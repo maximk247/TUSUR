@@ -12,22 +12,7 @@
     />
   </head>
   <body class="body">
-    <header class="header">
-      <div class="header_container">
-        <a href="index.html" class="header_container__logo">
-          <div>
-            <img src="images/logo.svg" alt="" />
-          </div>
-        </a>
-        <nav class="header_nav">
-          <a href="events.html" class="header_container__nav-link">Мероприятия</a>
-          <a href="#" class="header_container__nav-link">Блог</a>
-          <a href="#" class="header_container__nav-link">О нас</a>
-          <a href="#" class="header_container__nav-link">Контакты</a>
-        </nav>
-        <a href="#" class="btn header_container__btn">Войти</a>
-      </div>
-    </header>
+    @@include('blocks/header.html')
 
     <main class="main">
       <div class="events">
@@ -38,7 +23,29 @@
               <a href="#" class="card-event_link">
                 <picture class="card-event_picture">
                   <img
-                    src="images/Nirvana.jpg"
+                    src="assets/images/Nirvana.jpg"
+                    class="card-event_picture-img"
+                    alt="img"
+                  />
+                </picture>
+                <h3 class="card-event_title">
+                  Собираемся и слушаем альбом Nirvаna. Nirvana
+                </h3>
+                <p class="card-event_text">
+                  Это третий альбом группы, выпущенный после смерти Курта
+                  Кобейна и первый, содержащий студийный материал.
+                </p>
+                <time datetime="2022-12-07T18:00" class="card-event_time"
+                  >07.12.2022 | начало 18.00</time
+                >
+              </a>
+            </article>
+
+            <article class="listing_card-event card-event">
+              <a href="#" class="card-event_link">
+                <picture class="card-event_picture">
+                  <img
+                    src="assets/images/Nirvana.jpg"
                     class="card-event_picture-img"
                     alt="img"
                   />
@@ -60,7 +67,7 @@
               <a href="#" class="card-event_link">
                 <picture class="card-event_picture">
                   <img
-                    src="images/Nirvana.jpg"
+                    src="assets/images/Nirvana.jpg"
                     class="card-event_picture-img"
                     alt="img"
                   />
@@ -82,7 +89,7 @@
               <a href="#" class="card-event_link">
                 <picture class="card-event_picture">
                   <img
-                    src="images/Nirvana.jpg"
+                    src="assets/images/Nirvana.jpg"
                     class="card-event_picture-img"
                     alt="img"
                   />
@@ -104,29 +111,7 @@
               <a href="#" class="card-event_link">
                 <picture class="card-event_picture">
                   <img
-                    src="images/Nirvana.jpg"
-                    class="card-event_picture-img"
-                    alt="img"
-                  />
-                </picture>
-                <h3 class="card-event_title">
-                  Собираемся и слушаем альбом Nirvana. Nirvana
-                </h3>
-                <p class="card-event_text">
-                  Это третий альбом группы, выпущенный после смерти Курта
-                  Кобейна и первый, содержащий студийный материал.
-                </p>
-                <time datetime="2022-12-07T18:00" class="card-event_time"
-                  >07.12.2022 | начало 18.00</time
-                >
-              </a>
-            </article>
-
-            <article class="listing_card-event card-event">
-              <a href="#" class="card-event_link">
-                <picture class="card-event_picture">
-                  <img
-                    src="images/Nirvana.jpg"
+                    src="assets/images/Nirvana.jpg"
                     class="card-event_picture-img"
                     alt="img"
                   />
