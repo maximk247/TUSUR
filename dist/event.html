@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="show-event-popup">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -43,8 +43,35 @@
     </article>
   </main>
 
-  <footer class="footer"></footer>
-  <div class="pp" id="eventPP">
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__border"></div>
+      <div class="footer__wrapper">
+        <nav class="footer__nav">
+          <a href="" class="footer__nav-link">Календарь мероприятий</a>
+          <a href="" class="footer__nav-link">Провести мероприятие</a>
+          <a href="" class="footer__nav-link">Стать арендатором</a>
+          <a href="" class="footer__nav-link">Наши проекты</a>
+          <a href="" class="footer__nav-link">Контакты</a>
+        </nav>
+        <form class="footer__form subscribe">
+          <h4 class="subscribe__title">Подпишись и будь в курсе происходящего</h4>
+          <div class="subscribe__wrapper">
+            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+            <button type="submit" class="subscribe__submit">Подписаться</button>
+          </div>
+          <label class="subcribe__check check">
+            <input type="checkbox" class="check__input" name="agree" required />
+            <span class="check__mark"></span>
+            <span class="check__label">
+              Согласен на обработку персональных данных
+            </span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <div class="is-hidden" id="eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
         <button class="pp__x-btn x-btn">
@@ -162,14 +189,13 @@
               Отправить
             </button>
 
-            <button type="button" class="form__close-btn">
-              Закрыть
-            </button>
+            <button type="button" class="form__close-btn">Закрыть</button>
           </div>
         </form>
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
